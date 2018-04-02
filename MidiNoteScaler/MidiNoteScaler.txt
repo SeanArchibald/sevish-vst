@@ -1,0 +1,13 @@
+bus 0 0;
+code seVi;
+type effect;
+midiin true;
+midiout true;
+midionly true;
+compatibility 1.0.3;
+description Info.txt;
+image bg.png
+
+param -name Input Notes per Octave -min 1 -max 300 -default 12 -auto true
+param -name Output Notes per Octave -min 1 -max 300 -default 12 -auto true
+param -name Center MIDI Note -min 0 -max 127 -default 60 -nsteps 128 -auto true

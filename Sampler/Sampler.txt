@@ -1,0 +1,41 @@
+bus 0 2;
+code seVi;
+type instrument;
+midiin true;
+compatibility 1.0.3;
+description Info.txt;
+
+param -name Output Gain -label dB -min -100 -max 12 -default 0 -auto true
+param -name Output HPF -label Hz -min 10 -max 200 -default 10 -auto false
+param -name Output LPF -label Hz -min 1000 -max 22000 -default 22000 -auto false
+param -name Sample Root Note -min 0 -max 127 -label MIDInote -default 60 -nsteps 128 -auto false
+param -name Sample Fine Tuning -min -100 -max 100 -label cents -default 0 -auto false
+param -name Sample Channels -list Stereo/Mono -default 0 -auto false
+param -name Sample Start -min 0 -max 1 -default 0 -auto true
+param -name Sample End -min 0 -max 1 -default 1 -auto true
+param -name VCA EG Attack -label ms -min 0 -max 10000 -default 1 -auto true
+param -name VCA EG Decay -label ms -min 0 -max 10000 -default 200 -auto true
+param -name VCA EG Sustain -label % -min 0 -max 100 -default 80 -auto true
+param -name VCA EG Release -label ms -min 0 -max 10000 -default 20 -auto true
+param -name VCA EG Shape -auto true -list Linear/Exponential
+param -name Pitch Octave -min -3 -max 3 -nsteps 7 -default 0 -auto true
+param -name Pitch Modulation Type -list Slow/Fast/LPnoise -default 0 -auto true
+param -name Pitch EG Amount -label Octave -min 0 -max 4 -default 0 -auto true
+param -name Pitch EG Attack -label ms -min 0 -max 10000 -default 1 -auto true
+param -name Pitch EG Decay -label ms -min 0 -max 10000 -default 200 -auto true
+param -name Pitch EG Sustain -label % -min 0 -max 100 -default 0 -auto true
+param -name Pitch EG Release -label ms -min 0 -max 10000 -default 20 -auto true
+param -name Pitch EG Shape -auto true -list Linear/Exponential
+param -name Pitch EG Polarity -list Positive/Negative -auto true
+param -name Filter Frequency -label Hz -min 20 -max 22000 -default 22000
+param -name Filter Q -label % -min 0 -max 20 -default 0.707
+param -name Filter Type -list LP/BP -auto true
+param -name Filter Keyfollow -list Off/On -auto true
+param -name Filter EG Amount -label Octave -min 0 -max 8 -default 0 -auto true
+param -name Filter EG Attack -label ms -min 0 -max 10000 -default 500 -auto true
+param -name Filter EG Decay -label ms -min 0 -max 10000 -default 500 -auto true
+param -name Filter EG Sustain -label % -min 0 -max 100 -default 0 -auto true
+param -name Filter EG Release -label ms -min 0 -max 10000 -default 500 -auto true
+param -name Filter EG Shape -auto true -list Linear/Exponential
+param -name Filter EG Polarity -list Positive/Negative -auto true
+param -name Pitch Bend Amount -label cents -min 0 -max 2400 -default 200 -auto true

@@ -1,0 +1,38 @@
+bus 0 2;
+code seVi;
+type instrument;
+midiin true;
+compatibility 1.0.3;
+description Info.txt;
+image bg.png
+
+param -name Output Gain -label dB -min -100 -max 0 -default 0 -auto true
+param -name Filter LPF -label Hz -min 50 -max 22000 -default 1000 -auto true
+param -name Octave -min -3 -max 3 -nsteps 7 -default 0 -auto true
+param -name VCA EG Attack -label ms -min 0 -max 10000 -default 1 -auto true
+param -name VCA EG Decay -label ms -min 0 -max 10000 -default 2500 -auto true
+param -name VCA EG Sustain -label % -min 0 -max 100 -default 0 -auto true
+param -name VCA EG Release -label ms -min 0 -max 10000 -default 50 -auto true
+param -name VCA EG Shape -auto true -list Linear/Exponential -default 1
+param -name Pitch EG Amount -label Octave -min 0 -max 2 -default 1 -auto true
+param -name Pitch EG Attack -label ms -min 0 -max 10000 -default 0 -auto true
+param -name Pitch EG Decay -label ms -min 0 -max 10000 -default 120 -auto true
+param -name Pitch EG Sustain -label % -min 0 -max 100 -default 0 -auto true
+param -name Pitch EG Release -label ms -min 0 -max 10000 -default 50 -auto true
+param -name Pitch EG Shape -auto true -list Linear/Exponential -default 1
+param -name Pitch EG Polarity -auto true -list Positive/Negative
+param -name Osc 2 Amount -min 0 -max 1 -default 0.162 -auto true
+param -name Osc 2 Ratio -min 1 -max 16 -default 2 -auto true
+param -name Osc 3 Amount -min 0 -max 1 -default 0.038 -auto true
+param -name Osc 3 Ratio -min 1 -max 16 -default 3 -auto true
+param -name Osc 4 Amount -min 0 -max 1 -default 0 -auto true
+param -name Osc 4 Ratio -min 1 -max 16 -default 4 -auto true
+param -name Osc 5 Amount -min 0 -max 1 -default 0 -auto true
+param -name Osc 5 Ratio -min 1 -max 16 -default 5 -auto true
+param -name Osc 6 Amount -min 0 -max 1 -default 0 -auto true
+param -name Osc 6 Ratio -min 1 -max 16 -default 6 -auto true
+param -name Osc 7 Amount -min 0 -max 1 -default 0 -auto true
+param -name Osc 7 Ratio -min 1 -max 16 -default 7 -auto true
+param -name Osc 8 Amount -min 0 -max 1 -default 0 -auto true
+param -name Osc 8 Ratio -min 1 -max 16 -default 8 -auto true
+param -name Pitch Bend Amount -label cents -min 0 -max 4800 -default 1200 -auto true

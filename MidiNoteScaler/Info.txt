@@ -1,0 +1,8 @@
+MidiNoteScaler is a neat MIDI utility to scale your MIDI notes to larger or smaller tunings. One use case is to convert a piece of 12-EDO music in to another system such as 19-EDO.
+
+Note this plugin DOES NO RETUNING - it only changes the distance between MIDI notes. You must use your own synth in tandem with this plugin in order to get the desired effect.
+
+MidiNoteScaler also does some rounding to the output MIDI notes, which introduces some error. But that's all part of the fun.
+
+Version: 1.0
+Author: Sevish

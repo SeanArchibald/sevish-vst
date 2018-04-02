@@ -1,0 +1,4 @@
+Sub is a monosynth designed for low low frequencies.
+
+Version: 1.0
+Author: Sevish
