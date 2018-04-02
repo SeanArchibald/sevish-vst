@@ -2,7 +2,7 @@ bus 0 2;
 code seVi;
 type instrument;
 midiin true;
-compatibility 1.0.3;
+compatibility 1.0.4;
 description Info.txt;
 
 param -name Output Gain -label dB -min -100 -max 12 -default 0 -auto true

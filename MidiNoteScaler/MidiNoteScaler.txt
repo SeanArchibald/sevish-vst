@@ -4,7 +4,7 @@ type effect;
 midiin true;
 midiout true;
 midionly true;
-compatibility 1.0.3;
+compatibility 1.0.4;
 description Info.txt;
 image bg.png
 
