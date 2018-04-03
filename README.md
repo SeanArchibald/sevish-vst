@@ -4,19 +4,25 @@ Microtonal VST intruments/effects built using Camomile and Pure Data.
 
 ## Getting Started
 
-The contents of this repository contain only the source files for the plugins. In order to get the plugins working in your DAW or VST host, you need to [download the Camomile plugins](https://github.com/pierreguillot/Camomile/releases/latest) and [follow these intructions](https://github.com/pierreguillot/Camomile/wiki/How-to-generate-plugins).
+The contents of this repository contain only the source files for the plugins. In order to get the plugins working in your DAW or VST host, you need to [download the Camomile plugins](https://github.com/pierreguillot/Camomile/releases/latest) and [follow these instructions](https://github.com/pierreguillot/Camomile/wiki/How-to-generate-plugins).
 
 ## The Plugins
 
 ### Sampler
 
+![A screenshot of the Sampler plugin](Sampler/Sampler.png)
+
 Stereo sampler with a traditional subtractive-synth topology. Probably only supports WAV, I haven't tried MP3s with it. 6-voice polyphony. This instrument uses up most of my CPU when running idle. Any ideas for optimisation would be appreciated.
 
 ### Sub
 
+![A screenshot of the Sub plugin](Sub/Sub.png)
+
 A monophonic additive synth, optimised for sub bass. Jolly good for adding weight to mixes, or doubling a bass part to add more weight to that part. Also you can use the pitch envelope to achieve a TR-808-like boom.
 
 ### MidiNoteScaler
+
+![A screenshot of the MidiNoteScaler plugin](MidiNoteScaler/MidiNoteScaler.png)
 
 MidiNoteScaler is a MIDI effect. You specify a source EDO and an output EDO, and it will change the MIDI note number of all incoming note messages.
 
